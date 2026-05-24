@@ -47,8 +47,8 @@ The analysis covers high schools across New York State, with 2014–2017 as the 
 
 ```
 .
-├── NYSDEBTSTUDENTRELIEF.pdf          # Full paper with motivation, methods, results, and references
-├── STUDENTSDEBTRELEIFNY2025.ipynb    # Python notebook: data cleaning, proxy construction, DiD estimation, figures
+├── NYSDEBTSTUDENTRELIEF.pdf # Full paper with motivation, methods, results, and references
+├── STUDENTSDEBTRELEIFNY2025.ipynb # Python notebook: data cleaning, proxy construction, DiD estimation, figures
 └── README.md
 ```
 
@@ -75,8 +75,8 @@ To reproduce, follow these two steps.
 
 ```bash
 mdb-tables -1 "SRC2013.accdb" | while IFS= read -r t; do
-  echo "Exporting table: $t"
-  mdb-export "SRC2013.accdb" "$t" > "${t// /_}.csv"
+ echo "Exporting table: $t"
+ mdb-export "SRC2013.accdb" "$t" > "${t// /_}.csv"
 done
 ```
 
@@ -93,7 +93,7 @@ This produces one CSV per table inside the database (e.g., `Demographic_Factors.
 
 ## Context
 
-This was an independent research project completed for a graduate econometrics course. All data sourcing, proxy construction, model specification, and analysis are my own work.
+This was an independent research project completed for UBC ECON 526 (MA Quantatative Economics with Data Science Applications). All data sourcing, proxy construction, model specification, and analysis are my own work.
 
 ## Author
 
